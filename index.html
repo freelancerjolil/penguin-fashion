@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Css</title>
+    <!-- Bebas Neue Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto Font From Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+      .font-bebas-neue {
+        font-family: "Bebas Neue", sans-serif;
+      }
+    </style>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-roboto">
+    <header class="bg-orange-200">
+      <!-- Nav Section -->
+      <nav class="max-w-7xl m-auto md:flex md:justify-around">
+        <div class="mt-5">
+          <img class="w-60" src="./icons/logo.png" alt="" />
+        </div>
+        <div class="mt-5">
+          <ul class="flex gap-14">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Banner Section -->
+      <div class="max-w-7xl m-auto md:flex justify-around items-center">
+        <div class="w-1/2">
+          <h1 class="uppercase font-bebas-neue text-7xl m-auto">
+            Be the Penguins <br /><span class="uppercase">of Winter</span>
+          </h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button
+            class="bg-green-500 py-4 px-8 rounded-xl text-white font-medium"
+          >
+            Buy now
+          </button>
+        </div>
+        <div class="w-1/2">
+          <img class="ml-16" src="./images/model.png" alt="" />
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
